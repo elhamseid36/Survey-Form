@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, intial-scale=1.0">
+    <title> Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+      background-color: #33bb99;
+      color: #f5f6f7;
+      width: 100%;
+      height: 100vh;
+      font-family: sans-serif;
+      }
+      h1, p {
+        color: #000000;
+      }
+      h1, p, form{
+        margin: 1em auto;
+        text-align: center;
+      }
+      form {
+        background-color: #223344;
+        width: 60vw;
+        max-width: 500px;
+        min-width: 300px;
+      }
+      fieldset {
+        border: none;
+        padding; 2rem 0;
+        border-bottom: 3px solid yellow;
+      }
+      fieldset: last-of-bottom {
+        border-bottom: none;
+      }
+      label {
+        display: block;
+        margin: 0.5rem 0;
+
+      }
+      input, textarea, select {
+       margin: 10px 0 0 0;
+        margin-right: 0px;
+        width: 100%;
+        min-height: 2rem;
+
+      }
+      input, textarea{
+        background-color: #0a0a23;
+        border: 1px solid yellow;
+        color: #ffffff;
+      }
+      .inline {
+        width: unset;
+        margin:  0 0.5em 0 0;
+        vertical-align: middle;
+      
+      }
+      input[type="submit"] {
+        display: block;
+        width: 60%;
+        margin: 1em auto;
+        height: 2em;
+        font-size: 1.1em;
+        background-color: blue;
+        border-color: yellow;
+        min-width: 300px;
+      }
+      input[type="file"] {
+        padding: 1px 2px;
+      }
+      .inline {
+        display: inline;
+        
+        .alignment {
+          text-align: left;
+        }
+       
+        
+
+      
+        
+       </style>
+      
+    
+      
+    </head>
+    <body>
+      <h1 id="title"> Survey Form</h1>
+      <p id="description"> Fill the form with the required information</p>
+      <form id="survey-form" method="post" action=" https://survey-form.freecodecamp.rocks">
+
+      <fieldset>
+        <label for="name" id="name-label"> Enter your name <Input id="name" type="text" placeholder="name" required/>
+        <label for="email" id="email-label"> Enter your email <Input id="email" type="email" placeholder="email" required/>
+        <label for="number" id="number-label"> Enter your age <Input id="number" type="number" placeholder="age" min="13" max="120" required/>
+      </fieldset>
+      <fieldset>
+        <label> Would you recommend freeCodeCamp to a friend?
+          <select id="dropdown">
+            <option> Definitely
+              </option>
+              <option> May be</option>
+              <option> Not-sure</option>
+              </select>
+        </fieldset>
+
+      <fieldset>
+       <legend> What is your favorite feature of freeCodeCamp?</legend>
+         <labe for="Projects"> <Input type="radio" value="projects" name="favorite feature" Class="inline" checked/> Projects </label>
+         <label for="Community"> <Input type="radio" value="Community" name="favorite feature" class="inline"/> Community </label>
+         <label for="Challenges"> <Input type="radio" value="Challenges" name="favorite feature" class="inline"/> Challenges </label>
+         <label for="Free sources"> <Input type="radio" value="Free sources" name="favorite feature" class="inline"/> Free sources </label>
+     </fieldset>
+     <fieldset>
+      <legend> What would you like to see</legend>
+      <label for="Machine-learning projects"> <Input type="checkbox" value="Machine-learnng projects" Class="inline" required/> Machine-learning projects</label>
+      <label for="Front-end projects"> <Input type="checkbox" value="Front-end projects" Class="inline" required/> Front-end projects</label>
+      <label for="Back-end projects"> <Input type="checkbox" value="Back-end projects" Class="inline" required/> Back-end projects</label>
+      <label for="Data Visualization"> <Input type="checkbox" value="Data Visualization" Class="inline" required/>Data Visualization</label>
+      <label for="Instructions"> <Input type="checkbox" value="Instructions" Class="inline" required/>Instructions</label>
+      <label for="peer-discusions"> <Input type="checkbox" value="peer-discusions" Class="inline" required/>peer-discusions</label>
+      </fieldset>
+      <fieldset>
+        <legend> Any comments or suggestons?</legend>
+        <label><textarea placeholder="Enter your comment here"></textarea>
+        </fieldset>
+        
+          <fieldset>
+     <label for="submit"><input id="submit" type="submit" value="Submit"/></label>
+            </fieldset>
+        </form>
